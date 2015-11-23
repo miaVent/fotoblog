@@ -10,3 +10,31 @@ body {
     background-color: black;
     color: white;
 }
+h1 {
+    color: #0cdff0;
+    font-family: papyrus;
+    font-size: 200%;
+}
+h2 {
+    color: #3e423d;
+    font-family: Goudy Old Style;
+    font-size: 150%;
+}    
+p {
+    /* border: 5px solid #1e2bd8; 
+    padding: 10px; 
+    margin: 30px; */
+    color: #ffffff;
+    font-family: arial;
+    font-size: 80%;
+}
+#p01 {
+    color: red;
+}
+.error {
+    color: yellow;
+}
+h3 {
+    border: 5px solid #1e2bd8; /* das Wort solid muss mit angegeben werden */
+    padding: 10px; /* defines a space inside the border */
+}
