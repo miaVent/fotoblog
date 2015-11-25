@@ -10,6 +10,22 @@ body {
     background-color: black;
     color: white;
 }
+ul#menu {
+    padding: 0;
+}
+ul#menu li {
+    display: inline;
+}
+ul#menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+ul#menu li a:hover {
+    background-color: orange;
+}
 h1 {
     color: #0cdff0;
     font-family: papyrus;
@@ -28,7 +44,7 @@ p {
     font-family: arial;
     font-size: 80%;
 }
-#p01 {
+p#p01 {
     color: red;
 }
 .error {
