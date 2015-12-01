@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="de"> <!- gibt der Suchmaschine an das es sich um eine deutsche Seite handelt --> 
+<html lang="de"> <!- gibt der Suchmaschine an das es sich um eine deutsche Seite handelt -->
+<meta name="description" content="Fotoblog Mareen Guske"> <!- Metadaten sind wichtig für Seitenbeschreibung, Schlüsselwörter, Autor und andere Metadaten. Sie werden genuzt von Browsern, Suchmaschinen und weitere Web Services. -->
+<meta name="keywords" content="Fotoblog, Mareen, Guske, Mareen Guske, Picture, Bilder, Photography, Fotografie">
+<meta name="author" content="Mareen Guske">
+<meta charset="UTF-8">
     <head>
         <title>mareen-guske</title> <!- wird im Tap vom Webbrowser angezeigt --> 
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>"> <!- Einbidung des Style Sheets in die HTML Datei --> 
@@ -13,11 +17,29 @@
         </ul>
         <h1>mareen-guske</h1> <!- you can use 6 headlines, sollte auch nur für Überschriften genutzt werden --> 
         <h2>NIKON D5000</h2>
+        <div id="header">
+            <h1>mareen-guske</h1>
+            <h2>NIKON D5000</h2>
+        </div>
+        <div id="nav">
+            Alter Fotoblog<br>
+            Fotocommunity<br>
+            500px<br>
+        </div>
+        <div id="section">
+            <h3>Makroübung</h3>
+            <p>
+                An diesem Feiertag war wunderschönes Wetter und wir waren mit meiner Kamera und eine Decke im Westpark. Dort suchten wir uns ein gemütliches Plätzchen auf der Wiese und haben es uns gut gehen lassen. Erst hatte ich gar keine Lust zum Fotografieren, aber dann hatte ich mein Opfer für diesen Tag gefunden. Es war eine Tierfeder und schon war die Kamera mit dem Makroobjektiv draußen. An diesem Tag hatte ich viel über mein Objektiv gelernt. Ich wußte nie so richtig wo genau der Schärfebereich liegt. Bei so einem Makroobjektiv ist dieser Bereich doch verdammt schmall und klein. Daran musste ich mich erstmal gewöhnen und die Feder war das perfekte Objekt dafür. Natürlich wollte ich nicht auf Dauer nur eine Feder fotografieren und nach Hause gehen war auch keine Option. Somit hatte ich mir dann ein zweites Motiv gesucht. In diesem Fall musste mein Freund ab und zu als Motiv herhalten. Ich hatte im April einen Portraitkurs gehabt und habe dort wieder neue Bereiche und Blickwinkel kennengelernt und dies habe ich dann auch gleich versucht in die Tat umzusetzen. Diesmal darf ich Euch mein erstes Bild von einem menschlichen Auge präsentieren. Leider ist das Bild nicht so scharf und schön geworden wie ich es sehr gerne gehabt hätte, aber für den ersten Versuch ganz in Ordnung. Außerdem sind diesmal nicht alle Bilder im Original sondern mit einem Schwarz-Weiß-Filter versehen. Wobei ich hier keine großen Aufwände betrieben habe. Ich hatte die vorgegebenen Einstellungen in Lightroom genommen “In Schwarz Weiß konvertieren”. Die Unterschiede sind für mich persönlich ganz interessant. Das mit der Bildbearbeitung wird sicherlich noch ein wenig dauern, aber bestimmt kommen. Euch viel Spaß mit meinen Bilder. Schöne Grüße und bis zum nächsten Beitrag. Eure Mareen
+            </p>
+        </div>
+        <div id="footer">
+            Copyright © mareen-guske.de
+        </div>
+        <p><a href="#jump">Nach unten</a></p>
         <a href="http://www.fotoblog.mareen-guske.de" target="_blank">Alter Fotoblog mareen-guske</a> <!- benötigt immer einen Beschreibung/Symbol (visueller Teil) vom Link auf diese wird dann geklickt -->
         <p title="Mareen mit Fotoaparat"><img src="<?php echo get_template_directory_uri() ?>/images/Olympus-Elisa-10092015-26.jpg" width="240"  height="180" border="0"></p> <!- Grössenangaben sind immer in Pixel, Einbingund von Bildern, durch das Attribut title wurde ein tooltip hinzugefügt (Information zum Bild) -->
         <h3>Über Mareen Guske</h3>
         <p id="p01">Ich fotografiere seit 3 Jahren und versuche gerade meinen Fotoblog selber in HTML zu gestalten.</p> <!- Browsers automatically add an empty line before and after a paragraph. / Use id to address single elements -->
-        <p><a href="#jump">Nach unten</a></p>
         <p>Mein Equipment ist: <hr> eine NIKON D5000 mit einem Nikon Kit-Objektiv, einem Sigma Zoomobjektiv und einem Tamron Festbrennweitenobjektiv</p> <!- es wird eine horizontale Linie erzeugt durch das hr tag -->
         <pre>
 Seit November beschäftige ich mich sehr intensiv mit dem Thema Fotografie.
@@ -62,6 +84,13 @@ Radlkoferstr. 11<br>
             <li>Schminke Model</li>
             <li>Visagistin ja/nein</li>
         </ol>
+        <form>
+            First name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last Name:<br>
+            <input type"text" name="lastname">
+        </form>
         <div id="jump"></div>
     </body>
 </html>
