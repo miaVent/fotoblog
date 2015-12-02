@@ -85,11 +85,58 @@ Radlkoferstr. 11<br>
             <li>Visagistin ja/nein</li>
         </ol>
         <form>
-            First name:<br>
-            <input type="text" name="firstname">
-            <br>
-            Last Name:<br>
-            <input type"text" name="lastname">
+            <fieldset>
+                <legend>Personendaten:</legend>
+                First name:<br>
+                <input type="text" name="firstname"> <!- Standardgröße von dem Feld ist immer 20 Buchstaben -->
+                <br><br>
+                Last Name:<br>
+                <input type"text" name="lastname">
+                <br><br>
+                Password:<br>
+                <input type="password" name="psw">
+                <br><br>
+                <input type="submit" value"Submit">
+                <br><br>
+                <input type="radio" name="sex" value="male" checked>Male
+                <br>
+                <input type="radio" name="sex" value="female">Female
+                <br><br>
+                Checkbox:<br>
+                <input type="checkbox" name="camera1" value="Camera"> I have a NIKON D5000
+                <br>
+                <input type="checkbox" name="camera2" value="Other"> I have another camera
+                <br><br>
+                Sex:<br>
+                <select name="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br><br>
+                <input type="submit">
+                <br><br>
+                Sonstiges:<br>
+                <textarea name="message" rows="10" cols="30">
+                </textarea>
+                <br><br>
+                <input type="submit">
+                <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+                <br><br>
+                Click Button:<br>
+                <input type="button" oncklick="alert('Fotoblog Mareen Guske')" value="Click Me!"> <!- ????? Es erscheint kein Extrafenster -->
+                <br><br>
+                Search Field:<br>
+                <input type="search" name="suche">
+                <br><br>
+                Bild als Submit Button:<br>
+                <input type="image" src="<?php echo get_template_directory_uri() ?>/images/fotokameras-0002.gif" alt="Submit" width="48" height="48"> <!- Bei Bildern immer Größe mit angeben -->
+                <br><br>
+                Platzhalter:<br>
+                <input type="text" name="fname" placeholder="First name"><br>
+                <input type="text" name="lname" placeholder="Last name"><br>
+                <input type="submit" value="Submit">
+                <br><br>
+            </fieldset>
         </form>
         <div id="jump"></div>
     </body>
